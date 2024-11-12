@@ -26,9 +26,10 @@ app.get("/paintings", async (req, res, next) => {
                         <div>${paintings
                           .map(
                             (painting, idx) =>
-                              `<li>${painting.name}, by ${painters[idx]}</li>`
+                              `<li>${painting.name}, by ${painters[idx]}. idx: ${idx}. painterId: ${painting.painterId}</li>`
                           )
                           .join("")}</div>
+                          <div>${painters}</div>
                     </body>
                 </html>`);
   } catch (ex) {
