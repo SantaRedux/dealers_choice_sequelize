@@ -74,7 +74,7 @@ app.get("/paintings", async (req, res, next) => {
 const liftoff = async () => {
   try {
     // await db.syncAndSeed();
-    const port = process.env.port || 1338;
+    const port = process.env.port || 3000;
     app.listen(port, () => console.log(`listening on ${port}`));
   } catch (ex) {
     console.log(ex);
