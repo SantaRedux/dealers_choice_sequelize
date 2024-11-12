@@ -16,7 +16,7 @@ app.get("/paintings", async (req, res, next) => {
     });
 
     const painters = await paintings.map((painting) =>
-      Painter.findByPk(painting.painterId)
+      Painter.findByPk(painting.painterId.name)
     );
 
     res.send(`
