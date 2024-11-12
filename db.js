@@ -3,18 +3,18 @@ const {
   DataTypes: { DATE, STRING, INTEGER, UUID, UUIDV4 },
 } = Sequelize;
 // const conn = new Sequelize("postgres://localhost/paintings_db");
+const conn = new Sequelize("postgres://postgres:dbpw@localhost/paintings_db");
 
-const username = "postgres";
-const password = "dbpw";
-const host = "localhost";
-const database = "paintings_db";
-const port = 5432;
+// const username = "postgres";
+// const password = "dbpw";
+// const host = "localhost";
+// const database = "paintings_db";
 
-const conn = new Sequelize(database, username, password, {
-  host,
-  dialect: "postgres",
-  logging: false,
-});
+// const conn = new Sequelize(database, username, password, {
+//   host,
+//   dialect: "postgres",
+//   logging: false,
+// });
 
 const nationality = ["Italy", "Spain", "France"];
 
